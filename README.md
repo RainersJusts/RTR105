@@ -38,3 +38,6 @@ Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, k
 
   lietojot ar _"> XXXXXXXX.txt"_, X vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
 
+
+#### 3.nodarbības izmantoto komandu paskaidrojumi
+
