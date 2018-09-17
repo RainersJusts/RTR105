@@ -1,0 +1,125 @@
+    1  man sudo_root
+    2  sudo_root
+    3  root
+    4  help
+    5  su_root
+    6  su root
+    7  sudo
+    8  man sudo
+    9  echo $0
+   10  man echo
+   11  echo
+   12  echo /var
+   13  echo Rainers
+   14  sh
+   15  echo $0
+   16  man sh
+   17  whoami
+   18  who
+   19  man who
+   20  uname ;a
+   21  uname -a
+   22  man pwd
+   23  pwd
+   24  ls
+   25  man ls
+   26  history
+   27  mk dir
+   28  pwd
+   29  mkdir
+   30  mkdir Mana Mape
+   31  ls
+   32  man del
+   33  delete
+   34  help
+   35  cd Mape
+   36  cd ..
+   37  rmdir Mana Mape
+   38  ls
+   39  mkdir ManaMape
+   40  ls
+   41  rmdir ManaMape
+   42  mkdir ManaMape
+   43  cd ManaMaper
+   44  cd ManaMape
+   45  mk ManaApakshmape
+   46  cd ManaApakshmape
+   47  mkdir ManaApakshmape
+   48  cd ManaApakshmape
+   49  cd
+   50  rmdir ManaMape/
+   51  man rmdir
+   52  rmdir ManaMape --ignore-fail-on-non-empty
+   53  ls
+   54  rmdir ManaMape --ignore-fail-on-non-empty
+   55  man rm
+   56  rm -r ManaMape
+   57  ls
+   58  man echo
+   59  echo "vienības matrica"
+   60  echo "teksts
+najsn
+asodnoasn
+"
+   61  man echo
+   62  echo -e "Teksts/nTeksts/nTeksts"
+   63  echo -e "Teksts\nTeksts\nTeksts"
+   64  echo -a
+   65  echo "teksts" > fails1.txt
+   66  ls
+   67  fails1.txt
+   68  ls -l
+   69  cat fails1.txt
+   70  more fails1.txt
+   71  less fails1.txt
+   72  echo "papildus teksts" > fails1.txt
+   73  more fails1.txt
+   74  echo "teksts" > fails1.txt
+   75  more fails1.txt
+   76  echo "papildus teksts" >> fails1.txt
+   77  more fails1.txt
+   78  ls -l
+   79  nano fails1.txt
+   80  ls -a
+   81  chmod 540 fails.txr
+   82  chmod 540 fails2.txt
+   83  ls -al
+   84  echo "teksts" > fails2.txt
+   85  nano fails2.txt
+   86  ls -al
+   87  echo "teksts" > ../fails1.txt
+   88  ls -al
+   89  cp fails1.txt fails101.txt
+   90  ls -al
+   91  mv *1*.txt Documents/
+   92  cd Documents/
+   93  ls -al
+   94  mv fails1.txt ../fails101.txt
+   95  ls
+   96  ..
+   97  cd ..
+   98  ls -l
+   99  mv fails101.txt fails103.txt
+  100  ls
+  101  mv fails103.txt fails2.txt
+  102  ls
+  103  rm fails3.txt
+  104  ls
+  105  cd /Music
+  106  cd Music/
+  107  ls
+  108  ls -a
+  109  cd ..
+  110  ls
+  111  ls Music
+  112  ls Music/ -a
+  113  pwd
+  114  mv fails2.txt Music/
+  115  ls Music/ -a
+  116* rm Music/fails2.tx
+  117  ls Music/ ;a
+  118  ls Music/ -a
+  119  rm fails*.txt
+  120  man rm
+  121  history
+  122  history > history_20180917.txt
