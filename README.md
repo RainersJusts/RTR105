@@ -2,6 +2,9 @@
 ## Datormācības kursā elektroniskā klade
 
 
+_Iepriekš paskaidrotās komandās ar laiku parādīsies papildinājumi un papildinājumi veikšanu datumu._
+
+
 #### 2.nodarbības izmantoto komandu paskaidrojumi
 **"cd"** - change directory, nomaina darbību atrašanās vietu;
 
@@ -16,7 +19,11 @@ Pievienojot _"-a"_, tiks norādīta OS versija, kernel nosaukums u.t.t.;
 
 **"echo"** - "echoes" a line of text input by the user, uzraksta doto tekstu vai informāciju nākamajā līnijā. 
 
+
 Izmanotojot kopā ar _"$0"_, tiks norādīts dotajā brīdī lietotais SHELL skripts;
+
+Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n";**(17.09.2018)**
+
 
 
 **"sh"** - switch to sh script, pārslēdz no noklusējuma bash skripta uz sh. Lai tiktu atpakaļ, jāraksta terminālī _"bash"_;
@@ -29,15 +36,35 @@ Izmanotojot kopā ar _"$0"_, tiks norādīts dotajā brīdī lietotais SHELL skr
 
 **"ls"** - lists the contents of the current directory, norāda mapes sastāvu - kādas mapes ir pieejamas šajā mapē.
 
-Pievienojot _"-l"_, tiks norādīts detalizēts saraksts. 
-Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
+  Pievienojot _"-l"_, tiks norādīts detalizēts saraksts. 
+  Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
 
 
 **"history"** - prints a full history of used commands, including from previous sessions, norāda visas iepriekš lietotās komandas, tajā skaitā arī no iepriekšējām termināļa lietošanas reizēm;
 
 
-  lietojot ar _"> XXXXXXXX.txt"_, X vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
+  Lietojot ar _"> XXXXXXXX.txt"_, X vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
+
 
 
 #### 3.nodarbības izmantoto komandu paskaidrojumi
 
+
+**"mkdir"** - makes a directory, izveido jaunu mapi;
+
+
+  i.e. "_mkdir ManaMape_"
+
+
+**"rmdir"** - removes the specified directory, nodzēš norādīto mapi. Nedzēš, ja tajā ir kaut kas iekšā bez papildus argumenta;
+
+
+**"rm"** -  removes the specified file or directory, nodzēš norādīto failu vai mapi un tās apakšmapes. 
+
+  
+  Pievienojot "_-r_", failus noņems bez ierunām;
+
+
+**"more; nano; less"** - displays the specified .txt file, depending on the command used, parāda norādīto .txt failu atkarībā no lietotās komandas.
+
+  **"nano"** - Nano's ANOther editor, teksta rediģētājs termināli.
