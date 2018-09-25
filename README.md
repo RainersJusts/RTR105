@@ -96,8 +96,8 @@ Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
 
     history >yourhistorytext.txt
     ls
-    Desktop    Downloads         Music               Videos    Templates
-    Documents  examples.desktop  historyofheck.txt   Pictures  Public
+    Desktop    Downloads         Music                 Videos    Templates
+    Documents  examples.desktop  yourhistorytext.txt   Pictures  Public
 
 
 #### 3.nodarbības izmantoto komandu paskaidrojumi
