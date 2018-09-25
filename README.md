@@ -37,6 +37,15 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"ls"** - lists the contents of the current directory, norāda mapes sastāvu - kādas mapes ir pieejamas šajā mapē.
 
   Pievienojot _"-l"_, tiks norādīts detalizēts saraksts. 
+  
+  Burtu virknes nozīme: 
+  
+    1. "d vai -" - ar "_d_" tiek apzīmētas mapes, ar _"-"_ - fail;
+    2. "r" - read jeb lasīšanas piekļuve;
+    3. "w" - write jeb rakstīšanas piekļuve;
+    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
+    
+  
   Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
 
 
@@ -68,3 +77,6 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"more; nano; less"** - displays the specified .txt file, depending on the command used, parāda norādīto .txt failu atkarībā no lietotās komandas.
 
   **"nano"** - Nano's ANOther editor, teksta rediģētājs termināli.
+  
+
+**"chmod"** - changes the _Read/Write/Execute_ permissions of the chosen file, nomaina noteiktā faila _Rakstīšanas/Lasīšānas/Palaišanas_ atļaujas.
