@@ -40,10 +40,10 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
   
   Burtu virknes nozīme: 
   
-    1. "d vai -" - ar "_d_" tiek apzīmētas mapes, ar _"-"_ - fail;
-    2. "r" - read jeb lasīšanas piekļuve;
-    3. "w" - write jeb rakstīšanas piekļuve;
-    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
+   1. "d vai -" - ar "_d_" tiek apzīmētas mapes, ar _"-"_ - fail;
+   2. "r" - read jeb lasīšanas piekļuve;
+   3. "w" - write jeb rakstīšanas piekļuve;
+   4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
     
   
   Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
