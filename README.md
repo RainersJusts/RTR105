@@ -14,17 +14,22 @@ Atgriezties home/user mapē.
 
     cd ~
 
+
 **"man"** - manual, norāda norādītās komandas funkciju;
 
-  i.e. _"man cd"_
+
+        man cd
   
   
 **"uname"** - prints system information on screen, norāda sistēmas informāciju. 
 Pievienojot _"-a"_, tiks norādīta OS versija, kernel nosaukums u.t.t.;
 
 
+        uname
+        Linux
         uname -a
-        
+        Linux User-VirtualBox 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:21:48 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
 
 
 **"echo"** - "echoes" a line of text input by the user, uzraksta doto tekstu vai informāciju nākamajā līnijā. 
@@ -36,6 +41,7 @@ Izmanotojot kopā ar _"$0"_, tiks norādīts dotajā brīdī lietotais SHELL skr
         echo $0
         bash
 
+
 Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n";**(17.09.2018)**
 
 
@@ -44,11 +50,21 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 
 **"whoami"** - displays current users name, norāda lietotāja nosaukumu jeb vārdu;
 
+
+        whoami
+        user
+
+
 **"who"** - displays which users are online at the moment, norāda pieslēgtos lietotājus un ārējos pieslēgumus;
 
 **"pwd"** - displays current directory, norāda pašreizējo funkciju izpildes vietu jeb atrašanos failu sistēmā;
 
 **"ls"** - lists the contents of the current directory, norāda mapes sastāvu - kādas mapes ir pieejamas šajā mapē.
+
+
+        ls
+        Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
+
 
   Pievienojot _"-l"_, tiks norādīts detalizēts saraksts. 
   
@@ -59,6 +75,10 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
    3. "w" - write jeb rakstīšanas piekļuve;
    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
     **(25.09.2018)**
+    
+    
+      drwxrwxrwx
+    
   
   Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst, vai nav svarīgas parastam lietotājam.
   
