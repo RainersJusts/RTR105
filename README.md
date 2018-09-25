@@ -40,7 +40,7 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
   
   Burtu virknes nozīme: 
   
-   1. "d vai -" - ar "_d_" tiek apzīmētas mapes, ar _"-"_ - fail;
+   1. "d vai -" - ar "_d_" tiek apzīmētas mapes, ar _"-"_ tiek apzīmēts fails pašreizējā atrašanās vietā failu sistēmā;
    2. "r" - read jeb lasīšanas piekļuve;
    3. "w" - write jeb rakstīšanas piekļuve;
    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
@@ -81,7 +81,7 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 
 **"chmod"** - changes the _Read/Write/Execute_ permissions of the chosen file, nomaina noteiktā faila _Rakstīšanas/Lasīšānas/Palaišanas_ atļaujas. Skatīt _"ls"_ apakšpunktu _"-l"_.
   
-   "chmod XXX" ievietojot X vietā noteiktu skaitli {0;1;2;3;4;5;6;7}, tiks mainīta rwx vērtība.
+   "chmod XXX" ievietojot "X" vietā noteiktu skaitli {0;1;2;3;4;5;6;7}, tiks mainīta attiecīgā lietotāja rwx vērtība, atkarībā no izvēlētā "X".
     
     0 - tiks noņemtas visas atļaujas;
     1 - tiks iedota Execute atļauja;
@@ -93,3 +93,24 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
     7 - tiks iedotas visas 3 atļaujas.
     
     
+**"mv"** - moves or renames files, depending on the chosen name and location in the command line, pārvieto vai pārsauc failu, atkarībā no izvēlētā nosaukuma un izvēlētās saglabāšanas vietas.
+
+
+Faila pārsaukšana.
+
+    mv fails1.txt fails101.txt
+    
+    
+Faila pārvietošana.
+
+    mv fails1.txt Mape
+    mv fails1.txt ../
+
+
+**"cp"** - copies files to the designated location with the chosen name(if chosen), kopē failus uz noteikto vietu failu sistēmā ar noteikto nosaukumu(ja izvēlēts jauns).
+
+
+Faila kopēšana
+
+    cp fails1.txt ./fails101.txt
+    cp fails1.txt Music
