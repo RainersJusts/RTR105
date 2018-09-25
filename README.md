@@ -23,10 +23,18 @@ Atgriezties home/user mapē.
 Pievienojot _"-a"_, tiks norādīta OS versija, kernel nosaukums u.t.t.;
 
 
+        uname -a
+        
+
+
 **"echo"** - "echoes" a line of text input by the user, uzraksta doto tekstu vai informāciju nākamajā līnijā. 
 
 
 Izmanotojot kopā ar _"$0"_, tiks norādīts dotajā brīdī lietotais SHELL skripts;
+
+
+        echo $0
+        bash
 
 Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n";**(17.09.2018)**
 
