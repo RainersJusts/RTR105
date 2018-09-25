@@ -8,6 +8,12 @@ _Iepriekš paskaidrotās komandās ar laiku parādīsies papildinājumi un papil
 #### 2.nodarbības izmantoto komandu paskaidrojumi
 **"cd"** - change directory, nomaina darbību atrašanās vietu;
 
+
+Atgriezties home/user mapē.
+
+
+    cd ~
+
 **"man"** - manual, norāda norādītās komandas funkciju;
 
   i.e. _"man cd"_
@@ -46,13 +52,18 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
     **(25.09.2018)**
   
-  Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
+  Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst, vai nav svarīgas parastam lietotājam.
+  
+  
+Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
+    
+    ls ~/Music
 
 
 **"history"** - prints a full history of used commands, including from previous sessions, norāda visas iepriekš lietotās komandas, tajā skaitā arī no iepriekšējām termināļa lietošanas reizēm;
 
 
-  Lietojot ar _"> XXXXXXXX.txt"_, X vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
+  Lietojot ar _"> XXXXXXXX.txt"_, "X" vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
 
 
 
@@ -62,7 +73,7 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"mkdir"** - makes a directory, izveido jaunu mapi;
 
 
-  i.e. "_mkdir ManaMape_"
+    mkdir ManaMape
 
 
 **"rmdir"** - removes the specified directory, nodzēš norādīto mapi. Nedzēš, ja tajā ir kaut kas iekšā bez papildus argumenta;
@@ -71,7 +82,10 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"rm"** -  removes the specified file or directory, nodzēš norādīto failu vai mapi un tās apakšmapes. 
 
   
-  Pievienojot "_-r_", failus noņems bez ierunām;
+  Pievienojot "_-r_", failus noņems bez ierunām ar visām apakšmapēm un apakšfailiem;
+
+
+    rm -r ManaMape
 
 
 **"more; nano; less"** - displays the specified .txt file, depending on the command used, parāda norādīto .txt failu atkarībā no lietotās komandas.
