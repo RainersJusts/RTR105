@@ -44,7 +44,7 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
    2. "r" - read jeb lasīšanas piekļuve;
    3. "w" - write jeb rakstīšanas piekļuve;
    4. "x" - execute jeb palaišanas/atvēršanas piekļuve.
-    
+    **(25.09.2018)**
   
   Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst.
 
@@ -79,4 +79,17 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
   **"nano"** - Nano's ANOther editor, teksta rediģētājs termināli.
   
 
-**"chmod"** - changes the _Read/Write/Execute_ permissions of the chosen file, nomaina noteiktā faila _Rakstīšanas/Lasīšānas/Palaišanas_ atļaujas.
+**"chmod"** - changes the _Read/Write/Execute_ permissions of the chosen file, nomaina noteiktā faila _Rakstīšanas/Lasīšānas/Palaišanas_ atļaujas. Skatīt _"ls"_ apakšpunktu _"-l"_.
+  
+   "chmod XXX" ievietojot X vietā noteiktu skaitli {0;1;2;3;4;5;6;7}, tiks mainīta rwx vērtība.
+    
+    0 - tiks noņemtas visas atļaujas;
+    1 - tiks iedota Execute atļauja;
+    2 - tiks iedota Write atļauja;
+    3 - tiks iedotas Write un Execute atļaujas;
+    4 - tiks iedota Read atļauja;
+    5 - tiks iedotas Read un Execute atļaujas;
+    6 - tiks iedotas Read un Write atļaujas;
+    7 - tiks iedotas visas 3 atļaujas.
+    
+    
