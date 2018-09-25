@@ -18,17 +18,17 @@ Atgriezties home/user mapē.
 **"man"** - manual, norāda norādītās komandas funkciju;
 
 
-        man cd
+    man cd
   
   
 **"uname"** - prints system information on screen, norāda sistēmas informāciju. 
 Pievienojot _"-a"_, tiks norādīta OS versija, kernel nosaukums u.t.t.;
 
 
-        uname
-        Linux
-        uname -a
-        Linux User-VirtualBox 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:21:48 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+    uname
+    Linux
+    uname -a
+    Linux User-VirtualBox 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:21:48 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 
 
 
@@ -38,8 +38,8 @@ Pievienojot _"-a"_, tiks norādīta OS versija, kernel nosaukums u.t.t.;
 Izmanotojot kopā ar _"$0"_, tiks norādīts dotajā brīdī lietotais SHELL skripts;
 
 
-        echo $0
-        bash
+    echo $0
+    bash
 
 
 Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n";**(17.09.2018)**
@@ -51,8 +51,8 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"whoami"** - displays current users name, norāda lietotāja nosaukumu jeb vārdu;
 
 
-        whoami
-        user
+    whoami
+    user
 
 
 **"who"** - displays which users are online at the moment, norāda pieslēgtos lietotājus un ārējos pieslēgumus;
@@ -62,8 +62,8 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
 **"ls"** - lists the contents of the current directory, norāda mapes sastāvu - kādas mapes ir pieejamas šajā mapē.
 
 
-        ls
-        Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
+    ls
+    Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
 
 
   Pievienojot _"-l"_, tiks norādīts detalizēts saraksts. 
@@ -77,7 +77,7 @@ Izmanotojot kopā ar _"-e"_, tiks pieļauti teksta papildinājumi, piemēram "\n
     **(25.09.2018)**
     
     
-      drwxrwxrwx
+    drwxrwxrwx
     
   
   Pievienojot _"-a"_, tiks norādīts arī lietotājam apslēpti faili un mapes, kuras nevajadzētu mainīt vai dzēst, vai nav svarīgas parastam lietotājam.
@@ -93,6 +93,10 @@ Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
 
   Lietojot ar _"> XXXXXXXX.txt"_, "X" vietā rakstot vēlamo teksta faila nosaukumu, tiks izveidots .txt fails ar visu vēsturi.
 
+
+    history >yourhistorytext.txt
+    ls
+    
 
 
 #### 3.nodarbības izmantoto komandu paskaidrojumi
@@ -125,14 +129,14 @@ Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
   
    "chmod XXX" ievietojot "X" vietā noteiktu skaitli {0;1;2;3;4;5;6;7}, tiks mainīta attiecīgā lietotāja rwx vērtība, atkarībā no izvēlētā "X".
     
-    0 - tiks noņemtas visas atļaujas;
-    1 - tiks iedota Execute atļauja;
-    2 - tiks iedota Write atļauja;
-    3 - tiks iedotas Write un Execute atļaujas;
-    4 - tiks iedota Read atļauja;
-    5 - tiks iedotas Read un Execute atļaujas;
-    6 - tiks iedotas Read un Write atļaujas;
-    7 - tiks iedotas visas 3 atļaujas.
+    0 - tiks noņemtas visas atļaujas;           ---
+    1 - tiks iedota Execute atļauja;            --x
+    2 - tiks iedota Write atļauja;              -w-
+    3 - tiks iedotas Write un Execute atļaujas; -wx
+    4 - tiks iedota Read atļauja;               r--
+    5 - tiks iedotas Read un Execute atļaujas;  r-x
+    6 - tiks iedotas Read un Write atļaujas;    rw-
+    7 - tiks iedotas visas 3 atļaujas;          rwx
     
     
 **"mv"** - moves or renames files, depending on the chosen name and location in the command line, pārvieto vai pārsauc failu, atkarībā no izvēlētā nosaukuma un izvēlētās saglabāšanas vietas.
