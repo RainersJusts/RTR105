@@ -128,7 +128,11 @@ Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
 
 **"chmod"** - changes the _Read/Write/Execute_ permissions of the chosen file, nomaina noteiktā faila _Rakstīšanas/Lasīšānas/Palaišanas_ atļaujas. Skatīt _"ls"_ apakšpunktu _"-l"_.
   
-   "chmod XXX" ievietojot "X" vietā noteiktu skaitli {0;1;2;3;4;5;6;7}, tiks mainīta attiecīgā lietotāja rwx vērtība, atkarībā no izvēlētā "X".
+
+#####chmod Atslēgas
+
+
+   "chmod XXX" ievietojot "X" vietā noteiktu skaitli {0;1;2;3;4;5;6;7} jeb atslēgu, tiks mainīta attiecīgā lietotāja rwx vērtība, atkarībā no izvēlētā "X".
     
     0 - tiks noņemtas visas atļaujas;           ---
     1 - tiks iedota Execute atļauja;            --x
@@ -161,3 +165,20 @@ Faila kopēšana
 
     cp fails1.txt ./fails101.txt
     cp fails1.txt Music
+
+
+#### 4.nodarbības izmantoto komandu paskaidrojumi
+
+
+Skriptu veidošana. Ar faila tipu _".sh"_ tiek norādīts shell skripts. Skriptu rakstīšanu var veikt NANO teksta rediģētājā.
+
+
+    nano mans_skripts.sh
+
+
+Noklusējumā skripts nav palaižams(trūkst executable atļauja). To pievieno, izmantojot _"chmod"_. Vajadzīgās atļaujas atslēgu skatīt sadaļā "chmod Atslēgas".
+
+
+    chmod 764 mans_skripts.sh
+
+
