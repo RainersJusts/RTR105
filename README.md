@@ -121,7 +121,7 @@ Mapes sastāva parādīšana, ja neatrodies vēlamajā mapē.
     rm -r ManaMape
 
 
-**"more; nano; less"** - displays the specified .txt file, depending on the command used, parāda norādīto .txt failu atkarībā no lietotās komandas.
+**"more; nano; less; cat"** - displays the specified .txt file, depending on the command used, parāda norādīto .txt failu atkarībā no lietotās komandas.
 
   **"nano"** - Nano's ANOther editor, teksta rediģētājs termināli.
   
