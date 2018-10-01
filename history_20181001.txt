@@ -1,0 +1,283 @@
+    1  man sudo_root
+    2  sudo_root
+    3  root
+    4  help
+    5  su_root
+    6  su root
+    7  sudo
+    8  man sudo
+    9  echo $0
+   10  man echo
+   11  echo
+   12  echo /var
+   13  echo Rainers
+   14  sh
+   15  echo $0
+   16  man sh
+   17  whoami
+   18  who
+   19  man who
+   20  uname ;a
+   21  uname -a
+   22  man pwd
+   23  pwd
+   24  ls
+   25  man ls
+   26  history
+   27  whoami
+   28  whoami -a
+   29  who
+   30  pwd
+   31  ls
+   32  ls -a
+   33  ls -l
+   34  cd Music
+   35  cd ~
+   36  echo $0
+   37  cd Music/
+   38  pwd
+   39  ls
+   40  cd ~
+   41  cd Music/
+   42  ls -a
+   43  cd .cd .
+   44  ls -al
+   45  cd ..
+   46  ls -al
+   47  cd ..
+   48  pwd
+   49  ls a\ā
+   50  ls -a
+   51  ls -al
+   52  cd ..
+   53  ls -al
+   54  pwd
+   55  cd ..
+   56  pwd
+   57  cd ~
+   58  pwd
+   59  cd ..
+   60  cd /h
+   61  cd /home/
+   62  cd user
+   63  cd /
+   64  cd /home/usere
+   65  cd /home/user
+   66  pwd
+   67  cd
+   68  cd /
+   69  cd
+   70  mk dir
+   71  pwd
+   72  mkdir
+   73  mkdir Mana Mape
+   74  ls
+   75  man del
+   76  delete
+   77  help
+   78  cd Mape
+   79  cd ..
+   80  rmdir Mana Mape
+   81  ls
+   82  mkdir ManaMape
+   83  ls
+   84  rmdir ManaMape
+   85  mkdir ManaMape
+   86  cd ManaMaper
+   87  cd ManaMape
+   88  mk ManaApakshmape
+   89  cd ManaApakshmape
+   90  mkdir ManaApakshmape
+   91  cd ManaApakshmape
+   92  cd
+   93  rmdir ManaMape/
+   94  man rmdir
+   95  rmdir ManaMape --ignore-fail-on-non-empty
+   96  ls
+   97  rmdir ManaMape --ignore-fail-on-non-empty
+   98  man rm
+   99  rm -r ManaMape
+  100  ls
+  101  man echo
+  102  echo "vienības matrica"
+  103  echo "teksts
+  104  najsn
+  105  asodnoasn
+  106  "
+  107  man echo
+  108  echo -e "Teksts/nTeksts/nTeksts"
+  109  echo -e "Teksts\nTeksts\nTeksts"
+  110  echo -a
+  111  echo "teksts" > fails1.txt
+  112  ls
+  113  fails1.txt
+  114  ls -l
+  115  cat fails1.txt
+  116  more fails1.txt
+  117  less fails1.txt
+  118  echo "papildus teksts" > fails1.txt
+  119  more fails1.txt
+  120  echo "teksts" > fails1.txt
+  121  more fails1.txt
+  122  echo "papildus teksts" >> fails1.txt
+  123  more fails1.txt
+  124  ls -l
+  125  nano fails1.txt
+  126  ls -a
+  127  chmod 540 fails.txr
+  128  chmod 540 fails2.txt
+  129  ls -al
+  130  echo "teksts" > fails2.txt
+  131  nano fails2.txt
+  132  ls -al
+  133  echo "teksts" > ../fails1.txt
+  134  ls -al
+  135  cp fails1.txt fails101.txt
+  136  ls -al
+  137  mv *1*.txt Documents/
+  138  cd Documents/
+  139  ls -al
+  140  mv fails1.txt ../fails101.txt
+  141  ls
+  142  ..
+  143  cd ..
+  144  ls -l
+  145  mv fails101.txt fails103.txt
+  146  ls
+  147  mv fails103.txt fails2.txt
+  148  ls
+  149  rm fails3.txt
+  150  ls
+  151  cd /Music
+  152  cd Music/
+  153  ls
+  154  ls -a
+  155  cd ..
+  156  ls
+  157  ls Music
+  158  ls Music/ -a
+  159  pwd
+  160  mv fails2.txt Music/
+  161  ls Music/ -a
+  162  rm Music/fails2.tx
+  163  ls Music/ ;a
+  164  ls Music/ -a
+  165  rm fails*.txt
+  166  man rm
+  167  history
+  168  history > history_20180917.txt
+  169  ls
+  170  mk
+  171  man mk
+  172  man rm
+  173  man more
+  174  man less
+  175  man nano
+  176  echo "Teksts" >teksts1.txt
+  177  ls
+  178  man nano
+  179  nano teksts1.txt
+  180  ls
+  181  history
+  182  rm teksts1.txt
+  183  ls
+  184  man chmod
+  185  echo "teksts" > fails1.txt
+  186  ls
+  187  more fails1.txt
+  188  ls -al
+  189  chmod 540 fails1.txt
+  190  ls -al
+  191  chmod 000 fails1.txt
+  192  ls -l
+  193  chmod 333 fails1.txt
+  194  ls -l
+  195  chmod 444 fails1.txt
+  196  ls -l
+  197  chmod 111 fails1.txt
+  198  ls -l
+  199  chmod 666 fails1.txt
+  200  ls -l
+  201  chmod 777 fails1.txt
+  202  ls -l
+  203  ls
+  204  ls ;l
+  205  ls -l
+  206  chmod 100 fails1.txt
+  207  ls -l
+  208  chmod 000 fails1.txt
+  209  ls -l
+  210  chmod 001 fails1.txt
+  211  ls -l
+  212  chmod 111 fails1.txt
+  213  ls -l
+  214  chmod 222 fails1.txt
+  215  ls -l
+  216  chmod 008 fails1.txt 
+  217  chmod 007 fails1.txt 
+  218  ls -l
+  219  chmod 444 fails1.txt 
+  220  ls -l
+  221  chmod 333 fails1.txt 
+  222  ls -l
+  223  chmod 555 fails1.txt 
+  224  ls -l
+  225  q
+  226  quit
+  227  sudo gedit /etc/resolv.conf
+  228  ping www.google.com
+  229  ~
+  230  ping www.google.com
+  231  sudo gedit /etc/resolv.conf
+  232  ping www.google.com
+  233  sudo apt-get install git
+  234  sudo apt-get install ipython
+  235  sudo apt-get install idle
+  236  history
+  237  ipython
+  238  python
+  239  ipython
+  240  history
+  241  idl
+  242  idle
+  243  idle &
+  244  cat dgr_20181001.py 
+  245  gitclone https://github.com/RainersJusts/RTR105
+  246  git clone https://github.com/RainersJusts/RTR105
+  247  man echo
+  248  echo >.pythonrc
+  249  ls
+  250  nano
+  251  ls
+  252  ls -al
+  253  PYTHONSTARTUP= ~/.pythonrc
+  254  chmod 777 >pythonrc
+  255  chmod 777 >.pythonrc
+  256  history
+  257  chmod 777 .pythonrc
+  258  ls -ls
+  259  ls -la
+  260  PYTHONSTARTUP= ~/.pythonrc
+  261  idle &
+  262  nano
+  263  nano test1.py
+  264  fg
+  265  ls -l
+  266  cat test1.py 
+  267  python test1.py 
+  268  idle test1.py &
+  269  a
+  270  mv test1.py >/RTR105ls
+  271  mv test1.py >/RTR105
+  272  chmod 777 test1.py 
+  273  mv test1.py >/RTR105
+  274  mv test1.py >/RTR105/test1.py
+  275  mv test1.py >/RTR105/
+  276  ls
+  277  man mv
+  278  mv test1.py ~/RTR105/
+  279  ls
+  280  cd RTR105/
+  281  ls
+  282  ./test1.py
+  283  history >history_20181001.txt
