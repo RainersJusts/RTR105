@@ -11,7 +11,7 @@ def manssin(x):
         R = (-1)*x*x/((2*k)*(2*k+1))
         a = a * R
         S = S + a
-        if abs(a) < 0.01:
+        if abs(sin(x)-S) < 0.01:
             k = k - 1
             return k
 
