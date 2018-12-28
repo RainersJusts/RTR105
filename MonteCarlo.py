@@ -3,7 +3,7 @@ sys.path.append('/usr/local/anaconda3/lib/python3.6/site-packages')
 
 from numpy import random
 
-N = 10000
+N = 1000
 a = 0
 b = 5
 b1 = 2
@@ -35,12 +35,29 @@ plt.ylabel('y')
 plt.title('Funkcija un taas integraalis (laukums starp funkciju un x ass)')
 plt.plot(x,y,'ko')
 N1 = 0
+
+
 for i in range(N):
     if y[i] < cos(x[i]/2)*cos(x[i]/2):
         plt.plot(x[i],y[i],'go')
         N1 = N1 + 1
     else:
         plt.plot(x[i],y[i],'ro')
+
+##Izveidoju savas intereses peec
+##for i in range(N):
+##    if y[i] > 0:
+##        if y[i] < cos(x[i]/2):
+##            plt.plot(x[i],y[i],'go')
+##            N1 = N1 + 1
+##        elif y[i] > cos(x[i]/2):
+##            plt.plot(x[i],y[i],'ro')
+##    if y[i] < 0:
+##        if y[i] > cos(x[i]/2):
+##            plt.plot(x[i],y[i],'go')
+##            N1 = N1 + 1
+##        elif y[i] < cos(x[i]/2):
+##            plt.plot(x[i],y[i],'ro')
 
 S_zinaamais = (b-a) * (b1-a)
 S_nezinaamais = 1. * S_zinaamais * N1 / N

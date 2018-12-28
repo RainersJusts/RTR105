@@ -4,11 +4,11 @@ import sys
 sys.path.append('/usr/local/anaconda3/lib/python3.6/site-packages')
 ##print(vars())
 
-from numpy import sin, linspace
+from numpy import cos, linspace
 ##print(vars())
 
 def f(x):
-    return sin(x)
+    return cos(x/2)*cos(x/2)
 
 x = linspace(0,4,11)
 ##print(vars())
