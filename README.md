@@ -5,6 +5,11 @@
 _Iepriekš paskaidrotās komandās ar laiku parādīsies papildinājumi un papildinājumi veikšanu datumu._
 
 
+
+###Shell komandas
+
+
+
 #### 2.nodarbības izmantoto komandu paskaidrojumi
 **"cd"** - change directory, nomaina darbību atrašanās vietu;
 
@@ -180,5 +185,200 @@ Noklusējumā skripts nav palaižams(trūkst executable atļauja). To pievieno, 
 
 
     chmod 764 mans_skripts.sh
+
+
+
+### Python
+
+
+
+
+Vērtību piešķiršana kādam mainīgajam notiek caur _"="_ jeb vienādības zīmi.
+
+
+    >>> x = 10
+    >>> print(x)
+    10
+
+
+Piešķirto vērtību var mainīt, piešķirot tam pašam mainīgajam citu vērtību.
+
+
+    >>> x = 10
+    >>> print(x)
+    10
+    >>> x = 20
+    >>> print(x)
+    20
+
+
+Šos mainīgos var izmantot matemātiskās darbībās - saskaitīšanā(+), atņemšanā(-), reizināšānā(*), dalīšanā(/), kāpināšanā(**) un dalījuma atlikuma noteikšanā(%). Iekavās norādīts darbības simbols Python valodā.
+
+
+    >>> x = 10; y = 20; z = y + 5; L = 3
+    >>> print(x+y)
+    30
+    >>> print(y-x)
+    10
+    >>> print(x*y)
+    200
+    >>> print(x*2)
+    20
+    >>> print(x/y)
+    0.5
+    >>> print(x**2)
+    100
+    >>> print(z**(x/y))
+    5.0
+    >>> print(x % L)
+    1
+
+
+Mainīgā vērtību var mainīt, matemātiskajā darbībā izmantojot pašu mainīgo.
+
+
+    >>> x = 2
+    >>> x = x + 3
+    >>> print(x)
+    5
+
+
+
+**"print()"** - izprintē doto informāciju. Tā var būt dotā mainīgā vērtība, dotais teksts(string vērtība), skaitliska konstante vai kāda šo elementu kombinācija.
+
+
+    >>> x = 20
+    >>> print(x)
+    20
+    >>> print(137)
+    137
+    >>> print("This is a test")
+    This is a test
+    >>>print("The value of x is", x)
+    The value of x is 20
+
+
+**"type()"** - norāda, kāds ir dotā elementa tips.
+
+
+Skaitlis bez decimālā atdalītāja ir "integer" jeb "int" vērtība, ar atdalītāju - "floating point number" jeb "float" vērtība. Teksts - "string" jeb "str".
+
+
+    >>> x = 20; y = 20.0; z = "Type 4"
+    >>> type(x)
+    <class'int'>
+    >>> type(14)
+    <class'int'>
+    >>> type(y)
+    <class'float'>
+    >>> type(z)
+    <class'str'>
+    >>> type("Pass")
+    <class'str'>
+    >>> type("4")
+    <class'str'>
+
+
+Ar noteiktām komandām, šo elementu tipus var mainīt.
+
+
+"string" tipa elementus var pārveidot uz "integer" vai "floating point number", ja tie atbilst noteiktām prasībām. Parasti, ja kāds skaitlis ir saglabāts kā "str" vērtība, tad to var pārveidot, bet, ja  tam klāt vēl ir burti, tad pārveidošanu nevar veikt(ja vien neatlasa noteiktu vietu mainīgajā, kuru vēlas pārveidot).
+
+
+**"int()"** - nomaina mainīgā tipu uz "integer".
+
+
+**"float()"** - nomaina mainīgā tipu uz "floating point number".
+
+
+**"str()"** - nomaina mainīgā tipu uz "string".
+
+
+    >>> x = 20; y = "4"
+    >>> fx = float(x)
+    >>> type(fx)
+    <class'float'>
+    >>> sx = str(x)
+    >>> type(sx)
+    <class'str'>
+    >>> iy = int(y)
+    >>> type(iy)
+    <class'int'>
+
+
+**"vars()"** - vārdnīca, parāda pieejamos "modules" un atmiņā saglabātos mainīgos un to vērtības. Ar atribūtiem var parādīt papildu informāciju par mainīgo.
+
+Daži atribūti - __doc__ __dict__
+
+
+**"locals()"** - vārdnīca, strādā kā "vars()", bet tas nestrādā ar mainīgajiem.
+
+
+
+**"input()"** - pieprasa lietotāja ievadītu tekstu vai skaitli. Izmanto, ja grib dot mainīgajam citu vērtību katru reizi, kad palaiž programmu.
+
+
+    x = input("Input hours worked:")
+
+
+Pēc ievades, padotā vērtība tiek saglabāta kā mainīgā vērtība, bet šī vērtība ir saglabāta kā "string" vērtība. Šo tipu var mainīt ar atbilstošajām komandām ("int()","float()","str()")
+
+
+
+Lai viegli noskaidrotu, ko funckija dara, var izmanot **"__doc__"**
+
+
+    >>> print(float.__doc__)
+    float(x) -> floating point number
+    
+    Convert a string or number to a floating point number, if possible. 
+
+
+
+
+Advancētākās programmās lieto **"if"** komandu, ka izpilda komandu(-as), ja tā nosacījums izpildās.
+
+
+    x = 1
+    if x == 1:
+        print("Variable is exactly 1")
+
+
+Ja neizpildās noteiktais "if", var izmantot **"elif"**, kas strādās tikai tad, ja neizpildīsies "if" vai iepriekšējais(-ie) "elif".
+
+
+    x = 1
+    if x > 2:
+        print("More than 2")
+    elif x < 2:
+        print("Less than 2")
+
+
+Ja neizpildās neviena no "elif" vai "if" komandām, var izmantot komandu **"else"**, kurai nav jāpievieno neviens papildu nosacījums - tā strādās, ja viss cits nepiepildās.
+
+
+    x = 2
+    if x > 2:
+        print("More than 2")
+    elif x < 2:
+        print("Less than 2")
+    else:
+        print("Exactly 2")
+
+
+Parasti "if" un "elif" izmanto salīdzinājumus, lai noteiktu, vai komandu izpildīt.
+
+Salīdzināšanas simboli. Šie simboli tikai aplūko vērtības un tās neizmaina, pat ja salīdzinājumā ir iekļauta matemātiska darbība.
+
+< - mazāk kā
+<= - mazāks vai vienāds kā
+== - vienāds ar(vienu = izmanto piešķiršanai)
+> - vairāk kā
+>= - lielāks vai vienāds kā
+!= - nav vienāds
+
+
+Python valodā, pildot komandas, ir svarīgi, vai tām ir atkāpe no malas. "if" un tā paveidu apakškomandas ir vienu "tab" tālāk par pašu "if".
+
 
 
