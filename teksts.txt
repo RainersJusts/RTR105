@@ -3,6 +3,9 @@ Shis ir mans teksts nano teksta redigjeetaajaa
 apknsodinas
 asnhdiuaho
 psainfaispo
-Vārds
+piens
+slota
+piens
+mans
 Shis ir papildteksts
 Shis ir papildpapildteksts

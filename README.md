@@ -306,6 +306,40 @@ Ar noteiktām komandām, šo elementu tipus var mainīt.
     <class'int'>
 
 
+"String" tekstā var izvēlēties individuālus elementus vai elementu virkni, izmanot [] aiz mainīgā.
+
+
+**"len()"** - nosaka elementu skaitu mainīgajā.
+
+
+Katram elementam "string" tekstā tiek iedalīts savs kārtas skaitlis. Skaitīšana sākas no 0.
+  
+
+    c|h|a|r|a|c|t|e|r
+    0|1|2|3|4|5|6|7|8
+
+
+    >>> x = 'character'
+    >>> print(x[3])
+    r
+    >>> len(x)
+    9
+    >>> print(x[1:3])
+    har
+
+
+"String" elementus var "saskaitīt".
+
+
+    >>> x = 'character'
+    >>> b = 'I' + '' + 'am' + '' + 'a' + x
+    >>> print(b)
+    I am a character
+
+
+Bez '' starp vārdiem būtu izveidots viens vesels vārds.
+
+
 **"vars()"** - vārdnīca, parāda pieejamos "modules" un atmiņā saglabātos mainīgos un to vērtības. Ar atribūtiem var parādīt papildu informāciju par mainīgo.
 
     Daži atribūti - __doc__ __dict__
@@ -370,15 +404,247 @@ Parasti "if" un "elif" izmanto salīdzinājumus, lai noteiktu, vai komandu izpil
 
 Salīdzināšanas simboli. Šie simboli tikai aplūko vērtības un tās neizmaina, pat ja salīdzinājumā ir iekļauta matemātiska darbība.
 
-    1 < - mazāk kā
+    1 <  - mazāk kā
     2 <= - mazāks vai vienāds kā
     3 == - vienāds ar(vienu = izmanto piešķiršanai)
-    4 > - vairāk kā
+    4 >  - vairāk kā
     5 >= - lielāks vai vienāds kā
     6 != - nav vienāds
 
 
 Python valodā, pildot komandas, ir svarīgi, vai tām ir atkāpe no malas. "if" un tā paveidu apakškomandas ir vienu "tab" tālāk par pašu "if".
+
+
+
+Lai ietaupītu vietu kodā un lai atvieglotu kļūdu meklēšanu, Python ļauj izveidot savas funkcijas.
+
+
+**"def name()"** - tiek definēta funkcija, kas izpilda noteiktās funckijas, kad tā tiek izsaukta.
+
+
+    def multiply():
+        x = float(input("Ievadi pirmo skaitli:"))
+        y = float(input("Ievadi otro skaitli:"))
+        z = x * y
+        return print("Reizinajuma rezultats ir :",z)
+
+    multiply()
+
+
+Lai noslēgtu uzrakstīto funkciju, kura izdod kādu mainīgā vērtību, ir jāpiesauc "return" un vēlamais funkcijas rezultāts. Lai funckija izpildītos, tā ir jāizsauc. Tā netiek pildīta pie definēšanas.
+
+
+Funkcijā arī var izmantot jau ārpus tās veidotas vērtības, definējot iekavās ievietojot vienu vai vairākus mainīgos. Kad funkciju izsauc, iekavās jāievieto vēlaimais mainīgais, pēc kura veikt aprēķinus funkcijā.
+
+
+Funckijā esošie mainīgie, pat ja tiem sakrīt nosaukums, paliek tikai funkcijas ietvaros. Pēc piemēra, "multiply()" x mainīgais paliek funckijā. To izsaucot, piemēram, lietojot "print(x)", tiks norādīta ķļūda, jo šāda vērtība nav definēta.
+
+
+Ērta funckija Python ir "try" un "except". Ja zem "try" esošās funckijas izdod kļūdu, neizpildās pienācīgi, tad tiek pildītas zem "except" esošās darbības.
+
+
+    try:
+        x = float(input("Ievadi skaitli:"))
+        print(x)
+    except:
+        print("Netika ievadiits skaitlis")
+
+
+Ja tiks padots skaitlis, skaitlis tiks izprintēts. Ja tiks padots burts jebkas cits, tiks izprintēts "Netika ievadiits skaitlis".
+
+
+Ļoti liela daļa programmu lieto ciklus, kas pilda funkciju, kamēr nosacījums izpildas vai arī mūžīgi(līdz piepildās atmiņa).
+
+
+**"while 'nosacījums'"** - pilda apakškomandas, kamēr izpildās nosacījums. Parasti  pirms cikla tiek definēts skaitlis un cikla ietvaros šis skaitlis tiek samazināts.
+
+
+    n = 3
+    while n > 0:
+        print(n)
+        n = n - 1
+    print(n)
+    print("Done")
+
+
+Šādas programmas izeja būtu:
+
+
+    3
+    2
+    1
+    0
+    Done
+
+
+Bez rindas "n = n - 1", cikls strādātu bezgalīgi, izejā printējot "3". Ja vēlas, lai cikls izbeigtos bez šādas rindas, izmanto "break" komandu.
+
+
+    while True:
+        line = input("-")
+        if line == 'done':
+            break
+        print(line)
+    print("Done")
+
+
+Šāds cikls izprintēs visu, ko lietotājs pados, līdz kamēr tiks padots teksts "done".
+
+
+Ja vēlas, lai cikls neveic savu funkciju kāda noteiktā vietā, izmanto "continue" komandu.
+
+
+    while True:
+        line = input("-")
+        if line[0] == '#'
+            continue
+        if line == 'done': 
+            break
+        print(line)
+    print("Done")
+
+
+Ja ievadītā teksta pirmais elements būs "#", tad cikls sāksies no jauna un netiks izprintēts rakstītais pēc šī simbola.
+
+
+**"for 'mainīgais' in 'masīvs'"** - tiek izpildīta darbība pie katra dotā masīva elementa(cik elementu, tik reizes tiks pildītas darbības ciklā).
+
+
+    for i in [10, 8, 6, 4, 2]:
+        print(i/2)
+    print("Done")
+
+
+Funkcijas rezultāts:
+
+
+    5
+    4
+    3
+    2
+    1
+    Done
+
+
+Masīvu var definēt arī pirms šīs funckijas.
+
+
+    x = [10,8,6,4,2]
+    for i in x:
+        ...
+
+
+Masīviem var pievienot vērtības, izmantojot ".append". Piemērā tiks izprintēts masīvas ar jaunajām vērtībām. [5, 4, 3, 2, 1]
+
+
+    x = []
+    n = 5
+    while n > 0:
+        x.append(n)
+        n = n -1
+    print(x)
+
+
+
+Skaitļu masīviem var mainīt individuālas vērtības. Tiem arī var izvēlēties noteiktu virkni ar elementiem, kurus izprintēt vai izmantot, izmatojot [n:m], gluži kā tika lietots "string" elementiem. Masīvu elementus skaita tāpat kā "string" elementus
+
+
+    >>> x = [1, 2, 5 , 12, 209]
+    >>> x[2] = 137
+    >>> print(x)
+    [1, 2, 137, 12, 209]
+    >>> print(x[1:3])
+    [2, 137, 12]
+
+
+**"dict()"** - tiek izveidota vārdnīca. Tā apkopo padotos datus un ļauj ātri tiem piekļūt ar indeksiem.
+
+
+    >>> soma = dict()
+    >>> soma['graamata'] = 1
+    >>> soma['ziimulis'] = 48
+    >>> soma['klade'] = 15
+    >>> print(soma)
+    {'graamata': 1, 'ziimulis': 48, 'klade': 15}
+    >>> print(soma['klade'])
+    15
+    >>> soma['klade'] = soma['klade'] + 3
+    >>> print(soma)
+    {'graamata': 1, 'ziimulis': 48, 'klade': 18}
+
+
+Indekss ir dotais vārds un cipari ir dati.
+
+
+**"list()"** -  strādā kā vārdnīca, bet neizmanto vārdus indeksācijai, bet gan ciparus. Strādā kā masīvs.
+
+
+    >>> nums.append(42)
+    >>> nums append(137)
+    >>> nums.append(137)
+    >>> print(nums)
+    [42, 137]
+    >>> nums[0] = 212
+    >>> print(nums)
+    [212, 137]
+
+
+**"open()"** -  atver pieprasīto failu, lai to lietotu programmā. Izveido "atslēgu", ar kuru piekļūst šim failam.
+
+
+Piemēra programma saskaita līniju skaitu tekstā un izprintē rindas, kas sākas ar "pi".
+
+
+    key = open("teksts.txt")
+    n = 0
+    for line in key:
+        n = n + 1
+        if line.startswith("pi"):
+            print(line)
+    print(n)
+
+
+Programmas rezultāts:
+
+
+    piens
+    
+    piens
+    
+    11
+    >>> 
+
+
+Lai izvairītos no atstarpēm, izmanto ".rstrip" vai ".lstrip".
+
+
+    ...
+    for line in key:
+        line = line.rstrip()
+        if ...
+    ...
+
+
+
+Python nav pilnīgi visa vajadzīga. Ja vēlas lietot funkcijas, kuras atbalsta Python, bet nav pieejams noklusējuma bibliotēkā, izmanto **"import"** funkciju.
+
+
+Ar "import" tiek importētas dažādas bibliotēkas. Šī funkcija ļauj importēt visu bibliotēku vai arī noteiktu komandu vai komandas. Šīs komandas nosaukumu var saglabāt, kāds ir, vai nodēvēt pēc savas izvēles.
+
+
+    from matplotlib import pyplot as plt
+
+
+Ar šo darbību tiek importēta grafika zīmēšanas komanda "pyplot" un tiek nodēvēta par "plt" atmiņas taupīšanas un programmētāja laika taupīšanas nolūkos.
+
+
+Ir daudz un dažādu bibliotēku.
+
+
+Daži piemēri - time, math, numpy, sys, matplotlib.
+
+
+Math un numpy bibliotēkā ir atrodoamas komandas, kas aprēķina dažādas matemātiskās darbības. Bieži lieto trigonometrisko funckiju aprēķinu veikšanai (piemēram, cos(x) vai sinh(x) ) 
 
 
 
