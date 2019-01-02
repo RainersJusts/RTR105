@@ -370,12 +370,12 @@ Parasti "if" un "elif" izmanto salīdzinājumus, lai noteiktu, vai komandu izpil
 
 Salīdzināšanas simboli. Šie simboli tikai aplūko vērtības un tās neizmaina, pat ja salīdzinājumā ir iekļauta matemātiska darbība.
 
-   1)< - mazāk kā
-   2)<= - mazāks vai vienāds kā
-   3)== - vienāds ar(vienu = izmanto piešķiršanai)
-   4)> - vairāk kā
-   5)>= - lielāks vai vienāds kā
-   6)!= - nav vienāds
+   1. < - mazāk kā
+   2. <= - mazāks vai vienāds kā
+   3. == - vienāds ar(vienu = izmanto piešķiršanai)
+   4. > - vairāk kā
+   5. >= - lielāks vai vienāds kā
+   6. != - nav vienāds
 
 
 Python valodā, pildot komandas, ir svarīgi, vai tām ir atkāpe no malas. "if" un tā paveidu apakškomandas ir vienu "tab" tālāk par pašu "if".
