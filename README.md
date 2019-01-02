@@ -308,7 +308,7 @@ Ar noteiktām komandām, šo elementu tipus var mainīt.
 
 **"vars()"** - vārdnīca, parāda pieejamos "modules" un atmiņā saglabātos mainīgos un to vērtības. Ar atribūtiem var parādīt papildu informāciju par mainīgo.
 
-Daži atribūti - __doc__ __dict__
+    Daži atribūti - __doc__ __dict__
 
 
 **"locals()"** - vārdnīca, strādā kā "vars()", bet tas nestrādā ar mainīgajiem.
@@ -325,7 +325,7 @@ Pēc ievades, padotā vērtība tiek saglabāta kā mainīgā vērtība, bet š�
 
 
 
-Lai viegli noskaidrotu, ko funckija dara, var izmanot **"__doc__"**
+Lai viegli noskaidrotu, ko funckija dara, var izmanot **"doc"**.
 
 
     >>> print(float.__doc__)
@@ -370,12 +370,12 @@ Parasti "if" un "elif" izmanto salīdzinājumus, lai noteiktu, vai komandu izpil
 
 Salīdzināšanas simboli. Šie simboli tikai aplūko vērtības un tās neizmaina, pat ja salīdzinājumā ir iekļauta matemātiska darbība.
 
-< - mazāk kā
-<= - mazāks vai vienāds kā
-== - vienāds ar(vienu = izmanto piešķiršanai)
-> - vairāk kā
->= - lielāks vai vienāds kā
-!= - nav vienāds
+ 1)< - mazāk kā
+ 2)<= - mazāks vai vienāds kā
+ 3)== - vienāds ar(vienu = izmanto piešķiršanai)
+ 4)> - vairāk kā
+ 5)>= - lielāks vai vienāds kā
+ 6)!= - nav vienāds
 
 
 Python valodā, pildot komandas, ir svarīgi, vai tām ir atkāpe no malas. "if" un tā paveidu apakškomandas ir vienu "tab" tālāk par pašu "if".
